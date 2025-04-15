@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 
-const useTimer=()=>{
+export const useTimer=()=>{
     const [timer, setTimer]=useState(15);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
